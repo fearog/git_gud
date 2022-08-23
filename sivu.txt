@@ -12,11 +12,22 @@
 
 +basic_start(entry)
 
+
 entry:
+;enable sprites
+    lda #%111
+
+    sta $d015
+
     ldx $#0
+
+
+
 loop:
     txa
     sta $d020
     sta $d021
 
     jmp loop
+
+
