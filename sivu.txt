@@ -1,0 +1,11 @@
+
+
+entry:
+    ldx $#0
+loop:
+    txa
+    sta $d020
+    sta $d021
+    inx
+
+    jmp loop
